@@ -1,0 +1,45 @@
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.layout{
+    display: grid;
+    min-height: 100vh;
+    grid-template-areas: 
+    "header header header"
+    "sidebar-left feed sidebar-right"
+    "footer footer footer";
+    grid-template-columns: 12.5vw 1fr 35vw;
+
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: black;
+    grid-area: header;
+    height: 10vh;
+}
+
+.sidebar-left {
+    position: sticky;
+    background-color: red;
+    grid-area: sidebar-left;
+    height: 90vh;
+    top: 10vh;
+}
+
+.sidebar-right {
+    position: sticky;
+    background-color: red;
+    grid-area: sidebar-right;
+    height: 90vh;
+    top: 10vh;
+}
+
+.feed {
+    background-color: blueviolet;
+    grid-area: feed;
+    height: 200vh;
+}

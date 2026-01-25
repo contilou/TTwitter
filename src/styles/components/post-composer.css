@@ -1,0 +1,27 @@
+.post-composer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2%;
+    height: 20vh;
+    background-color: brown ;
+}
+
+.post-input {
+    flex: 100%;
+    padding: 1%;
+    resize: none;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+.composer-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.composer-icons {
+    display: flex;
+}

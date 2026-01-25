@@ -6,11 +6,19 @@
     <title>ttwitter</title>
 
     <link rel="stylesheet" href="src/styles/layout.css">
+    <link rel="stylesheet" href="src/styles/components/post.css">
+    <link rel="stylesheet" href="src/styles/components/search-container.css">
+    <link rel="stylesheet" href="src/styles/components/post-composer.css">
   </head>
   <body>
     <div class="layout">
       <header>
-        <p style="color:white">TTwitter</p>
+        <p id="logo-icon" style="color:white">TTwitter</p>
+        <form class="search-container">
+          <input class="search-bar" type="search" placeholder="Buscar">
+            <button class="search-button" type="submit"></button>
+          </input>
+        </form>
       </header>
       <aside class="sidebar-left">
         <nav class="navbar">
@@ -22,8 +30,26 @@
           </ul>
         </nav>
       </aside>
-      <main class="feed">
-        Feed
+      <main>
+        <section class="post-composer">
+          <form>
+            <textarea class="post-input" placeholder="No que está pensando...?" rows="3"></textarea>
+          </form>
+          <div class="composer-buttons">
+            <div class="composer-icons">
+              <button type="button">1</button>
+              <button type="button">2</button>
+              <button type="button">3</button>
+            </div>
+            <button type="submit">Postar</button>
+          </div>
+        </section>
+        <section class="feed">
+          <article class="post">
+          </article>
+          <article class="post">
+          </article>
+        </section>
       </main>
       <aside class="sidebar-right">
         Barra Lateral Direita

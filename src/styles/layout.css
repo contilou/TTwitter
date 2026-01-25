@@ -8,13 +8,17 @@ body {
     min-height: 100vh;
     grid-template-areas: 
     "header header header"
-    "sidebar-left feed sidebar-right"
+    "sidebar-left main sidebar-right"
     "footer footer footer";
     grid-template-columns: 12.5vw 1fr 35vw;
 
 }
 
 header {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 12.5vw 1fr 35vw;
     position: sticky;
     top: 0;
     background-color: black;
@@ -38,8 +42,18 @@ header {
     top: 10vh;
 }
 
-.feed {
-    background-color: blueviolet;
-    grid-area: feed;
+main {
+    grid-area: main;
     height: 200vh;
+    background-color: blueviolet;
+}
+
+.feed {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#logo-icon {
+    justify-self: center;
 }

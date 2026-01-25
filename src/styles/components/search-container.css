@@ -1,0 +1,18 @@
+.search-container {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    width: 50vw;
+    height: 5vh;
+    background-color: gray;
+}
+
+.search-bar {
+    width: 48vw;
+    height: 4vh;
+}
+
+.search-button {
+    width: 2vw;
+    height: 4vh;
+}

@@ -1,0 +1,36 @@
+.suggestions-box {
+    width: 60%;
+    margin: 0 auto;
+}
+.suggestion-user-info {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5vw;
+    margin: 5% 0 5% 0;
+}
+
+.suggestion-avatar {
+    width: 3vw;
+    height: 3vw;
+    background-color: var(--img-placeholder);
+    border-radius: 100%;
+}
+
+.suggestion-username {
+    font-weight: 400;
+    margin: 0;
+}
+
+.suggestion-add-btn {
+    margin-left: auto;
+    border: none;
+    height: 5vh;
+    color: var(--highlight-primary);
+    background-color: var(--highlight-secondary);
+    border-radius: 0.75rem;
+}
+
+.suggestion-title {
+    margin: 0 0 4% 0;
+    font-weight: 400;
+}

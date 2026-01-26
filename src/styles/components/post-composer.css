@@ -5,7 +5,7 @@
     padding: 2% 4% 2% 4%;
     height: 20vh;
     background-color: var(--bg-surface);
-    border: 1px solid var(--border-color);
+    border: 1.5px solid var(--border-color);
     border-radius: 1rem;
     margin: 1%;
 }
@@ -25,13 +25,18 @@
     caret-color: var(--highlight-primary);
 }
 
-.composer-buttons {
+.composer-buttons-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.composer-icons {
+.composer-button {
+    background-color: transparent;
+    border: none;
+}
+
+.composer-icons-container {
     display: flex;
 }
 

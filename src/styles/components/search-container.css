@@ -27,6 +27,17 @@
 }
 
 .search-button {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
     width: 2vw;
     height: 4vh;
+    background-color: transparent;
+    border: none;
+}
+
+.search-icon {
+    width: 2vw;
+    height: 3.5vh;
+    margin-right: 1vw;
 }

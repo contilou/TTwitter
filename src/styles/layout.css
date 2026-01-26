@@ -1,5 +1,3 @@
-@import './theme.css';
-
 body {
     height: 100%;
     margin: 0;
@@ -29,12 +27,26 @@ header {
     height: 13vh;
 }
 
+nav {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 20%;
+    row-gap: 3%;
+}
+
+.nav-icon {
+    width: 3vw;
+}
+
 .sidebar-left {
     position: sticky;
     background-color: var(--bg-surface);
     grid-area: sidebar-left;
     height: 85vh;
     top: 15vh;
+    padding-top: 4vh;
+    box-sizing: border-box;
 }
 
 .sidebar-right {
@@ -49,15 +61,20 @@ main {
     grid-area: main;
     height: 200vh;
     background-color: var(--bg-surface);
-    margin: 1%;
+    margin-top: 3%;
 }
 
 .feed {
     display: flex;
     flex-direction: column;
-    
+    row-gap: 3vh;
+    margin-top: 3vh;
 }
 
 #logo-icon {
-    justify-self: center;
+    justify-self: self-start;
+    width: 4.5vw;
+    box-sizing: border-box;
+    padding: 2%;
+    margin-left: 2vw;
 }

@@ -8,3 +8,7 @@ input::placeholder, textarea::placeholder {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
 }
+
+input[type="search"]::-webkit-search-cancel-button {
+    display: none;
+}

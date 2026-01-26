@@ -4,4 +4,41 @@
     border: 1.5px solid var(--border-color);
     margin: 1%;
     border-radius: 1rem;
+    padding: 6% 15% 1% 15%;
+}
+
+.post-media {
+    width: 100%;
+}
+
+.post-avatar {
+    width: 3vw;
+    height: 3vw;
+    background-color: var(--img-placeholder);
+    border-radius: 100%;
+}
+
+.action-button {
+    background-color: transparent;
+    border: none;
+}
+
+.action-icon {
+    width: 2.5vw;
+}
+
+.post-midbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.post-user-info {
+    display: flex;
+    align-items: center;
+    column-gap: 1vw;
+}
+
+.post-username {
+    font-weight: 400;
 }

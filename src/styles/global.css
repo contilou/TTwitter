@@ -4,6 +4,10 @@ body, input, button, textarea {
     font-weight: 400;
 }
 
+h4, p {
+    font-family: 'Inter', sans-serif;
+}
+
 input::placeholder, textarea::placeholder {
     font-family: 'Inter', sans-serif;
     font-weight: 400;

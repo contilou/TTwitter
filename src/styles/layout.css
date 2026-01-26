@@ -40,21 +40,26 @@ nav {
 }
 
 .sidebar-left {
-    position: sticky;
+    position: fixed;
     background-color: var(--bg-surface);
     grid-area: sidebar-left;
     height: 85vh;
+    width: 12.5vw;
     top: 15vh;
+    left: 0;
     padding-top: 4vh;
     box-sizing: border-box;
 }
 
 .sidebar-right {
-    position: sticky;
+    position: fixed;
     background-color: var(--bg-surface);
     grid-area: sidebar-right;
+    width: 35vw;
     height: 85vh;
     top: 15vh;
+    right: 0;
+    box-sizing: border-box;
 }
 
 main {

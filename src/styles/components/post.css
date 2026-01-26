@@ -1,5 +1,8 @@
 .post {
-    background-color: green;
-    min-height: 60vh;
+    background-color: var(--bg-surface);
+    min-height: 80vh;
     border: solid;
+    border: 1px solid var(--border-color);
+    margin: 1%;
+    border-radius: 1rem;
 }

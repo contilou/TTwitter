@@ -1,0 +1,11 @@
+:root {
+    --bg-body: #181B24;
+    --bg-surface: #181B24;
+    --bg-header: #14161D;
+    --border-color: #484848;
+    --highlight-primary: #22A2F2;
+    --text-primary: white;
+    --text-secondary: #8f9092;
+    --text-tertiary: #000000;
+    --bg-search-bar: #1e2025;
+}

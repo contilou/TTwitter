@@ -2,9 +2,12 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 2%;
+    padding: 2% 4% 2% 4%;
     height: 20vh;
-    background-color: brown ;
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: 1rem;
+    margin: 1%;
 }
 
 .post-input {
@@ -13,7 +16,13 @@
     resize: none;
     width: 100%;
     box-sizing: border-box;
+    background-color: transparent;
+    border: none;
+}
 
+.post-input:focus {
+    outline: none;
+    caret-color: var(--highlight-primary);
 }
 
 .composer-buttons {
@@ -24,4 +33,14 @@
 
 .composer-icons {
     display: flex;
+}
+
+.submit-post {
+    height: 7vh;
+    width: 8vw;
+    color: var(--text-tertiary);
+    font-weight: 600;
+    background-color: var(--highlight-primary);
+    border: none;
+    border-radius: 0.75rem;
 }

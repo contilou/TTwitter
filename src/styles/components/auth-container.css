@@ -1,26 +1,29 @@
-.login-container {
+.auth-container {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     color: var(--text-tertiary);
     background-color: var(--bg-login);
     width: 30%;
-    aspect-ratio: 1 / 1.08;
     border-radius: 0.5rem;
     overflow: auto;
     box-sizing: border-box;
     padding: 0 3% 0 3%;
 }
 
-#login-form {
+#login-container {
+    aspect-ratio: 1 / 1.08;
+}
+
+.auth-form {
     display: contents;
 }
 
-.login-container::-webkit-scrollbar {
+.auth-container::-webkit-scrollbar {
     display: none;
 }
 
-.login-title {
+.auth-title {
     color: var(--text-tertiary);
     text-align: center;
     font-size: 1.1rem;

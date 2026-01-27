@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TTwitter: Signup</title>
+
+    <link rel="stylesheet" href="../../styles/global.css">
+    <link rel="stylesheet" href="../../styles/signup/signup-layout.css">
+    <link rel="stylesheet" href="../../styles/theme.css">
+    <link rel="stylesheet" href="../../styles/components/auth-container.css">
+  
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="../../styles/assets/icons/LogoTT.svg">
+  </head>
+  <body>
+    <div class="signup-layout">
+      <section class="auth-container" id="signup-container">
+        <h1 class="auth-title">Cadastro</h1>
+        <form class="auth-form">
+          <div class="input-wrapper">
+            <label for="name" class="input-label">Nome</label>
+            <input class="name-input" id="name" type="text" placeholder="nome de usuário">
+          </div>
+          <div class="input-wrapper">
+            <label for="email" class="input-label">Email</label>
+            <input class="email-input" id="email" type="email" placeholder="example@email.com">
+          </div>
+          <div class="input-wrapper">
+            <label for="birth" class="input-label">Data de nascimento</label>
+            <input class="email-input" id="birth" type="date" placeholder="xx/xx/xxxx">
+          </div>
+          <div class="input-wrapper">
+            <label for="password" class="input-label">Senha</label>
+            <input class="password-input" id="password" type="password" placeholder="●●●●●●●●●">
+            <img class="visibility-icon" src="../../styles/assets/icons/auth-container/Visibility.svg">
+          </div>
+          <div class="input-wrapper">
+            <label for="password-confirmation" class="input-label">Confirmar Senha</label>
+            <input class="password-input" id="password-confirmation" type="password" placeholder="●●●●●●●●●">
+            <img class="visibility-icon" src="../../styles/assets/icons/auth-container/Visibility.svg">
+          </div>
+          <label class="disclaimer-container">
+            <input type="checkbox" class="disclaimer-checkbox">
+            <p class="auth-disclaimer">Li e estou de acordo com os <a href="">Termos</a> e <a href="">Condições de uso.</a></p>
+          </label>
+          <button class="primary-button" type="submit">
+            <a class="primary-link" href="../../pages/home/index.html">Cadastrar</a>
+          </button>
+        </form>
+        <button class="secondary-button" type="button">
+            <a class="secondary-link" href="../../../index.html">Fazer Login</a>
+        </button>
+      </section>
+      <div class="logo-container">
+        <img class="logo-img" src="../../styles/assets/icons/LogoTT.svg">
+      </div>
+    </div>
+  </body>
+</html>

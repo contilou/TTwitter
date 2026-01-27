@@ -8,12 +8,17 @@
     border-radius: 0.5rem;
     overflow: auto;
     box-sizing: border-box;
-    padding: 0 3% 0 3%;
+    padding: 0 3% 2% 3%;
 }
 
 #login-container {
     aspect-ratio: 1 / 1.08;
 }
+
+#signup-container {
+    aspect-ratio: 1 / 1.40;
+}
+
 
 .auth-form {
     display: contents;
@@ -30,9 +35,21 @@
     font-weight: 700;
 }
 
-.login-disclaimer {
+.auth-disclaimer {
     text-align: center;
-    font-size: 0.8rem;
+    align-content: center;
+    font-size: 0.75rem;
+    width: fit-content;
+}
+
+.disclaimer-container {
+    display: flex;
+}
+
+.disclaimer-checkbox {
+    width: 4%;
+    margin: 0;
+
 }
 
 .forgot-password-link {
@@ -41,12 +58,12 @@
     text-decoration: none;
 }
 
-.login-button {
+.primary-button {
     background-color: var(--login-signup-primary);
     height: 8%;
 }
 
-#login-link {
+.primary-link {
     color: var(--text-primary); 
     text-decoration: none;
     width: 100%;
@@ -55,9 +72,13 @@
     align-content: center;
 }
 
-.register-button { 
+.secondary-button { 
     background-color: transparent;
     color: var(--login-signup-primary);
+}
+
+.secondary-link {
+    text-decoration: none;
 }
 
 .input-wrapper{
@@ -70,7 +91,7 @@
 
 }
 
-#visibility-icon {
+.visibility-icon {
     position: absolute;
     box-sizing: border-box;
     top: 50%;

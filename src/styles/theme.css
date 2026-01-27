@@ -2,6 +2,7 @@
     --bg-body: #181B24;
     --bg-surface: #181B24;
     --bg-header: #14161D;
+    --bg-login: white;
     --border-color: #484848;
     --highlight-primary: #22A2F2;
     --highlight-secondary: #222222;
@@ -10,4 +11,5 @@
     --text-tertiary: #000000;
     --bg-search-bar: #1e2025;
     --img-placeholder: #D9D9D9;
+    --login-signup-primary: #105F74;
 }

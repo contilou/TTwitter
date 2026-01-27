@@ -3,126 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TTwitter: Home</title>
+    <title>TTwitter: Login</title>
 
     <link rel="stylesheet" href="src/styles/global.css">
-    <link rel="stylesheet" href="src/styles/layout.css">
+    <link rel="stylesheet" href="src/styles/login/login-layout.css">
     <link rel="stylesheet" href="src/styles/theme.css">
-    <link rel="stylesheet" href="src/styles/components/post.css">
-    <link rel="stylesheet" href="src/styles/components/search-container.css">
-    <link rel="stylesheet" href="src/styles/components/post-composer.css">
-    <link rel="stylesheet" href="src/styles/components/suggestions-box.css">
+    <link rel="stylesheet" href="src/styles/components/login-container.css">
   
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <link rel="icon" href="src/styles/assets/icons/LogoTT.svg">
   </head>
   <body>
-    <div class="layout">
-      <header>
-        <img id="logo-icon" src="src/styles/assets/icons/LogoTT.svg">
-        <form class="search-container">
-          <input class="search-bar" type="search" placeholder="Buscar">
-            <button class="search-button" type="submit">
-              <img class="search-icon" src="src/styles/assets/icons/Search.svg">
-            </button>
-          </input>
+    <div class="login-layout">
+      <div class="logo-container">
+        <img class="logo-img" src="src/styles/assets/icons/LogoTT.svg">
+      </div>
+      <section class="login-container">
+        <h1 class="login-title">Bem vindo a plataforma TTwitter</h1>
+        <form id="login-form">
+          <div class="input-wrapper">
+            <label for="email" class="input-label">Email</label>
+            <input class="email-input" id="email" type="email" placeholder="example@email.com">
+          </div>
+          <div class="input-wrapper">
+            <label for="password" class="input-label">Senha</label>
+            <input class="password-input" id="password" type="password" placeholder="●●●●●●●●●">
+            <img id="visibility-icon" src="src/styles/assets/icons/login-container/Visibility.svg">
+          </div>
+          <a class="forgot-password-link" href="">Esqueci minha senha</a>
+          <button class="login-button" type="submit">
+            <a id="login-link" href="src/pages/home/index.html">Entrar</a>
+          </button>
         </form>
-      </header>
-      <aside class="sidebar-left">
-        <nav class="navbar">
-          <a>
-            <img class="nav-icon" src="src/styles/assets/icons/nav/Home.svg">
-          </a>
-          <a>
-            <img class="nav-icon" src="src/styles/assets/icons/nav/Notifications.svg">
-          </a>
-          <a>
-            <img class="nav-icon" src="src/styles/assets/icons/nav/Chat.svg">
-          </a>
-          <a>
-            <img class="nav-icon" src="src/styles/assets/icons/nav/Settings.svg">
-          </a>
-        </nav>
-      </aside>
-      <main>
-        <section class="post-composer">
-          <form>
-            <textarea class="post-input" placeholder="No que está pensando...?" rows="3"></textarea>
-            <div class="composer-buttons-container">
-              <div class="composer-icons-container">
-                <button class="composer-button" type="button">
-                  <img src="src/styles/assets/icons/post-composer/Image.svg">
-                </button>
-                <button class="composer-button" type="button">
-                  <img src="src/styles/assets/icons/post-composer/Emoji.svg">
-                </button>
-                <button class="composer-button" type="button">
-                  <img src="src/styles/assets/icons/post-composer/Link.svg">
-                </button>
-              </div>
-              <button class="submit-post" type="submit">Postar</button>
-            </div>
-          </form>
-        </section>
-        <section class="feed">
-          <article class="post">
-            <div class="post-content">
-              <div class="post-media-container">
-                <img class="post-media" src="src/styles/assets/icons/post/PostImage1.png">
-              </div>
-              <div class="post-midbar">
-                <div class="post-user-info">
-                  <div class="post-avatar"></div>
-                  <h4 class="post-username">@usuario</h4>
-                </div>
-                <div class="post-actions">
-                  <button class="action-button" type="button">
-                    <img class="action-icon" src="src/styles/assets/icons/post/Comment.svg">
-                  </button>
-                  <button class="action-button" type="button">
-                    <img class="action-icon" src="src/styles/assets/icons/post/Like.svg">
-                  </button>
-                  <button class="action-button" type="button">
-                    <img class="action-icon" src="src/styles/assets/icons/post/Heart.svg">
-                  </button>
-                </div>
-              </div>
-              <div class="post-text">
-                <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
-              </div>
-            </div>
-            
-          </article>
-          <article class="post">
-          </article>
-        </section>
-      </main>
-      <aside class="sidebar-right">
-        <section class="suggestions-box">
-          <h3 class="suggestion-title">Pessoas que você talvez conheça</h3>
-          <div class="suggestion-user-info">
-                  <div class="suggestion-avatar"></div>
-                  <h4 class="suggestion-username">@usuario</h4>
-                  <button class="suggestion-add-btn" type="button">Adicionar</button>
-                </div>
-          <div class="suggestion-user-info">
-                  <div class="suggestion-avatar"></div>
-                  <h4 class="suggestion-username">@usuario</h4>
-                  <button class="suggestion-add-btn" type="button">Adicionar</button>
-                </div>
-          <div class="suggestion-user-info">
-                  <div class="suggestion-avatar"></div>
-                  <h4 class="suggestion-username">@usuario</h4>
-                  <button class="suggestion-add-btn" type="button">Adicionar</button>
-                </div>
-          <div class="suggestion-user-info">
-                  <div class="suggestion-avatar"></div>
-                  <h4 class="suggestion-username">@usuario</h4>
-                  <button class="suggestion-add-btn" type="button">Adicionar</button>
-                </div>
-        </section>
-      </aside>
+        <button class="register-button" type="button">
+            <a>Registrar</a>
+        </button>
+        <p class="login-disclaimer">Li e estou de acordo com os <a href="">Termos</a> e <a href="">Condições de uso.</a></p>
+      </section>
     </div>
   </body>
-  
 </html>

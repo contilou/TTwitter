@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TTwitter: Login</title>
+
+    <link rel="stylesheet" href="../../styles/global.css">
+    <link rel="stylesheet" href="../../styles/home/layout.css">
+    <link rel="stylesheet" href="../../styles/theme.css">
+    <link rel="stylesheet" href="../../styles/components/post.css">
+    <link rel="stylesheet" href="../../styles/components/search-container.css">
+    <link rel="stylesheet" href="../../styles/components/post-composer.css">
+    <link rel="stylesheet" href="../../styles/components/suggestions-box.css">
+  
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="../../styles/assets/icons/LogoTT.svg">
+  </head>
+  <body>
+    <div class="layout">
+      <header>
+        <img id="logo-icon" src="../../styles/assets/icons/LogoTT.svg">
+        <form class="search-container">
+          <input class="search-bar" type="search" placeholder="Buscar">
+          <button class="search-button" type="submit">
+            <img class="search-icon" src="../../styles/assets/icons/Search.svg">
+          </button>
+
+        </form>
+      </header>
+      <aside class="sidebar-left">
+        <nav class="navbar">
+          <a>
+            <img class="nav-icon" src="../../styles/assets/icons/nav/Home.svg">
+          </a>
+          <a>
+            <img class="nav-icon" src="../../styles/assets/icons/nav/Notifications.svg">
+          </a>
+          <a>
+            <img class="nav-icon" src="../../styles/assets/icons/nav/Chat.svg">
+          </a>
+          <a>
+            <img class="nav-icon" src="../../styles/assets/icons/nav/Settings.svg">
+          </a>
+        </nav>
+      </aside>
+      <main>
+        <section class="post-composer">
+          <form>
+            <textarea class="post-input" placeholder="No que está pensando...?" rows="3"></textarea>
+            <div class="composer-buttons-container">
+              <div class="composer-icons-container">
+                <button class="composer-button" type="button">
+                  <img src="../../styles/assets/icons/post-composer/Image.svg">
+                </button>
+                <button class="composer-button" type="button">
+                  <img src="../../styles/assets/icons/post-composer/Emoji.svg">
+                </button>
+                <button class="composer-button" type="button">
+                  <img src="../../styles/assets/icons/post-composer/Link.svg">
+                </button>
+              </div>
+              <button class="submit-post" type="submit">Postar</button>
+            </div>
+          </form>
+        </section>
+        <section class="feed">
+          <article class="post">
+            <div class="post-content">
+              <div class="post-media-container">
+                <img class="post-media" src="../../styles/assets/icons/post/PostImage1.png">
+              </div>
+              <div class="post-midbar">
+                <div class="post-user-info">
+                  <div class="post-avatar"></div>
+                  <h4 class="post-username">@usuario</h4>
+                </div>
+                <div class="post-actions">
+                  <button class="action-button" type="button">
+                    <img class="action-icon" src="../../styles/assets/icons/post/Comment.svg">
+                  </button>
+                  <button class="action-button" type="button">
+                    <img class="action-icon" src="../../styles/assets/icons/post/Like.svg">
+                  </button>
+                  <button class="action-button" type="button">
+                    <img class="action-icon" src="../../styles/assets/icons/post/Heart.svg">
+                  </button>
+                </div>
+              </div>
+              <div class="post-text">
+                <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
+              </div>
+            </div>
+            
+          </article>
+          <article class="post">
+          </article>
+        </section>
+      </main>
+      <aside class="sidebar-right">
+        <section class="suggestions-box">
+          <h3 class="suggestion-title">Pessoas que você talvez conheça</h3>
+          <div class="suggestion-user-info">
+                  <div class="suggestion-avatar"></div>
+                  <h4 class="suggestion-username">@usuario</h4>
+                  <button class="suggestion-add-btn" type="button">Adicionar</button>
+                </div>
+          <div class="suggestion-user-info">
+                  <div class="suggestion-avatar"></div>
+                  <h4 class="suggestion-username">@usuario</h4>
+                  <button class="suggestion-add-btn" type="button">Adicionar</button>
+                </div>
+          <div class="suggestion-user-info">
+                  <div class="suggestion-avatar"></div>
+                  <h4 class="suggestion-username">@usuario</h4>
+                  <button class="suggestion-add-btn" type="button">Adicionar</button>
+                </div>
+          <div class="suggestion-user-info">
+                  <div class="suggestion-avatar"></div>
+                  <h4 class="suggestion-username">@usuario</h4>
+                  <button class="suggestion-add-btn" type="button">Adicionar</button>
+                </div>
+        </section>
+      </aside>
+    </div>
+  </body>
+  
+</html>

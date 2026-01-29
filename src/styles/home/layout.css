@@ -1,4 +1,5 @@
 body {
+    width: 100%;
     height: 100%;
     margin: 0;
     background-color: var(--bg-body);
@@ -7,11 +8,14 @@ body {
 .layout{
     display: grid;
     min-height: 100vh;
+    width: 100%;
+    max-width: 100%;
+    justify-content: center;
     grid-template-areas: 
     "header header header"
     "sidebar-left main sidebar-right"
     "footer footer footer";
-    grid-template-columns: 12.5vw 1fr 35vw;
+    grid-template-columns: 10rem 41rem 28rem;
 
 }
 
@@ -19,68 +23,74 @@ header {
     display: grid;
     justify-content: center;
     align-items: center;
-    grid-template-columns: 12.5vw 1fr 35vw;
+    grid-template-columns: 10rem 41rem 28rem;
     position: sticky;
     top: 0;
     background-color: var(--bg-header);
     grid-area: header;
-    height: 13vh;
+    width: 100%;
+    height: 5rem;
 }
 
 nav {
     height: 100%;
     display: flex;
     flex-direction: column;
-    margin: 0 0 0 20%;
-    row-gap: 3%;
+    margin: 0 0 0 2rem;
+    row-gap: 1rem;
 }
 
 .nav-icon {
-    width: 3vw;
+    width: 2.4rem;
 }
 
 .sidebar-left {
-    position: fixed;
+    position: sticky;
     background-color: var(--bg-surface);
     grid-area: sidebar-left;
-    height: 85vh;
-    width: 12.5vw;
-    top: 15vh;
+    height: 17rem;
+    width: 10rem;
+    top: 5rem;
     left: 0;
-    padding-top: 3.5vh;
+    padding-top: 1.3rem;
     box-sizing: border-box;
 }
 
 .sidebar-right {
-    position: fixed;
+    position: sticky;
     background-color: var(--bg-surface);
     grid-area: sidebar-right;
-    width: 35vw;
-    height: 85vh;
-    top: 15vh;
+    width: 28rem;
+    height: 35rem;
+    top: 5rem;
     right: 0;
-    padding-top: 3.5vh;
+    padding-top: 1.3rem;
     box-sizing: border-box;
 }
 
 main {
+    justify-content: center;
+    width: 41rem;
     grid-area: main;
     height: 200vh;
     background-color: var(--bg-surface);
-    margin-top: 3%;
+    margin-top: 1.2rem;
 }
 
 .feed {
     display: flex;
     flex-direction: column;
-    row-gap: 3vh;
-    margin-top: 3vh;
+    margin-top: 1.1rem;
 }
 
 #logo-icon {
     justify-self: self-start;
-    width: 4.5vw;
+    width: 3.6rem;
     box-sizing: border-box;
-    padding: 2%;
-    margin-left: 2vw;
+    padding: 0.2rem;
+    margin-left: 1.6rem;
+}
+
+@media screen and (max-width: 480px) and (orientation: portrait) {
+
 }

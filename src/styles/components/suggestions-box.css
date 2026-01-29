@@ -1,17 +1,17 @@
 .suggestions-box {
-    width: 60%;
+    width: 16.8rem;
     margin: 0 auto;
 }
 .suggestion-user-info {
     display: flex;
     align-items: center;
-    column-gap: 0.5vw;
-    margin: 5% 0 5% 0;
+    column-gap: 0.4rem;
+    margin: 0.84rem 0 0.84rem 0;
 }
 
 .suggestion-avatar {
-    width: 3vw;
-    height: 3vw;
+    width: 2.4rem;
+    height: 2.4rem;
     background-color: var(--img-placeholder);
     border-radius: 100%;
 }
@@ -24,13 +24,13 @@
 .suggestion-add-btn {
     margin-left: auto;
     border: none;
-    height: 5vh;
+    height: 1.85rem;
     color: var(--highlight-primary);
     background-color: var(--highlight-secondary);
     border-radius: 0.75rem;
 }
 
 .suggestion-title {
-    margin: 0 0 4% 0;
+    margin: 0 0 0.8rem 0;
     font-weight: 400;
 }

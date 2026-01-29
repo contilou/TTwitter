@@ -1,10 +1,10 @@
 .post {
     background-color: var(--bg-surface);
-    min-height: 80vh;
+    min-height: 36.1rem;
     border: 1.5px solid var(--border-color);
-    margin: 1%;
+    margin: 0.4rem;
     border-radius: 1rem;
-    padding: 6% 15% 1% 15%;
+    padding: 2.45rem 6.15rem 0.4rem 6.15rem;
 }
 
 .post-media {
@@ -12,8 +12,8 @@
 }
 
 .post-avatar {
-    width: 3vw;
-    height: 3vw;
+    width: 2.4rem;
+    height: 2.4rem;
     background-color: var(--img-placeholder);
     border-radius: 100%;
 }
@@ -24,7 +24,7 @@
 }
 
 .action-icon {
-    width: 2.5vw;
+    width: 2rem;
 }
 
 .post-midbar {
@@ -36,7 +36,7 @@
 .post-user-info {
     display: flex;
     align-items: center;
-    column-gap: 1vw;
+    column-gap: 0.8rem;
 }
 
 .post-username {

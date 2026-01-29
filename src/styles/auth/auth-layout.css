@@ -44,3 +44,32 @@ a {
     color: var(--login-signup-primary);
 }
 
+@media screen and (max-width: 480px) and (orientation: portrait) {
+    .logo-container {
+        width: 22%;
+    }
+
+    .auth-layout{
+        justify-content: flex-start;
+        padding: 7% 0 0 0;
+        box-sizing: border-box;
+    }
+
+    #signup-layout {
+        flex-direction: column-reverse;
+    }
+
+    #login-layout {
+        flex-direction: column;
+    }
+
+    button {
+        width: 75%;
+        margin: 0 auto 0 auto;
+    }
+
+    .input-wrapper {
+       width: 92%;
+       margin: 0 auto 0 auto;
+    }
+}

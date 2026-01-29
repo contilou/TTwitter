@@ -107,3 +107,32 @@
     font-size: 0.6rem;
     background-color: var(--bg-login);
 }
+
+@media screen and (max-width: 480px) and (orientation: portrait) {
+    .auth-container {
+        width: 80%;
+        margin: auto 0 auto 0;
+        border-radius: 0.8rem;
+    }
+
+    #login-container {
+        aspect-ratio: 1/1.7;
+    }
+
+    #signup-container {
+        aspect-ratio: 1/2.2;
+    }
+
+    .forgot-password-link {
+        visibility: hidden;
+    }
+
+    .disclaimer-checkbox {
+        margin-right: 0.5%;
+    }
+
+    .disclaimer-container {
+        width: 85%;
+        margin: 0 auto 0 auto;
+    }
+}

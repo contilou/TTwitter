@@ -4,11 +4,11 @@
     justify-content: space-evenly;
     color: var(--text-tertiary);
     background-color: var(--bg-login);
-    width: 30%;
+    width: 24rem;
     border-radius: 0.5rem;
     overflow: auto;
     box-sizing: border-box;
-    padding: 0 3% 2% 3%;
+    padding: 0 2.4rem 1.6rem 2.4rem;
 }
 
 #login-container {
@@ -47,7 +47,7 @@
 }
 
 .disclaimer-checkbox {
-    width: 4%;
+    width: 0.8rem;
     margin: 0;
 
 }
@@ -60,7 +60,7 @@
 
 .primary-button {
     background-color: var(--login-signup-primary);
-    height: 8%;
+    height: 2.6rem;
 }
 
 .primary-link {
@@ -106,4 +106,33 @@
     left: 5%;
     font-size: 0.6rem;
     background-color: var(--bg-login);
+}
+
+@media screen and (max-width: 480px) and (orientation: portrait) {
+    .auth-container {
+        width: 82%;
+        margin: auto 0 auto 0;
+        border-radius: 0.8rem;
+    }
+
+    #login-container {
+        aspect-ratio: 1/1.7;
+    }
+
+    #signup-container {
+        aspect-ratio: 1/2.2;
+    }
+
+    .forgot-password-link {
+        visibility: hidden;
+    }
+
+    .disclaimer-checkbox {
+        margin-right: 0.1rem;
+    }
+
+    .disclaimer-container {
+        width: 12rem;
+        margin: 0 auto 0 auto;
+    }
 }

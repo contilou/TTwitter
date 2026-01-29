@@ -1,6 +1,7 @@
 .post {
+    display: flex;
+    align-items: center;
     background-color: var(--bg-surface);
-    min-height: 36.1rem;
     border: 1.5px solid var(--border-color);
     margin: 0.4rem;
     border-radius: 1rem;
@@ -41,4 +42,43 @@
 
 .post-username {
     font-weight: 400;
+}
+
+@media screen and (max-width: 480px) and (orientation: portrait) {
+
+    .post {
+        padding: 2rem 2.9rem 2rem 2.9rem;
+        height: auto;
+    }
+
+    .action-icon {
+        width: 1.56rem;
+    }
+
+    .action-button {
+        width: 1.56rem;
+        margin: 0;
+    }
+
+    .post-user-info {
+        column-gap: 0;
+    }
+
+    .post-avatar {
+        width: 1.87rem;
+        height: 1.87rem;
+    }
+
+    .post-username {
+        font-size: 0.875rem;
+    }
+
+    .post-text {
+        font-weight: 400;
+        font-size: 1rem;
+    }
+
+    .post-midbar {
+        height: 2rem;
+    }
 }

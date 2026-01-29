@@ -7,6 +7,7 @@
     height: 2rem;
     background-color: var(--bg-search-bar);
     border-radius: 1rem;
+    
 }
 
 .search-container:focus-within {
@@ -40,4 +41,15 @@
     width: 2rem;
     height: 1.3rem;
     margin-right: 0.8rem;
+}
+
+@media screen and (max-width: 480px) and (orientation: portrait) {
+    .search-bar {
+        width: 80%;
+    }
+
+    .search-container {
+        width: 68%;
+        box-sizing: border-box;
+    }
 }

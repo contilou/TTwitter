@@ -14,7 +14,7 @@ body {
     "header header header"
     "sidebar-left main sidebar-right"
     "footer footer footer";
-    grid-template-columns: 10fr 41fr 28fr;
+    grid-template-columns: 10rem 41rem 28rem;
 
 }
 
@@ -22,7 +22,7 @@ header {
     display: grid;
     justify-content: center;
     align-items: center;
-    grid-template-columns: 10fr 41fr 28fr;
+    grid-template-columns: 10rem 41rem 28rem;
     position: sticky;
     top: 0;
     background-color: var(--bg-header);

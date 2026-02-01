@@ -14,7 +14,7 @@ body {
     "header header header"
     "sidebar-left main sidebar-right"
     "footer footer footer";
-    grid-template-columns: 10rem 41rem 28rem;
+    grid-template-columns: 10fr 41fr 28fr;
 
 }
 
@@ -22,7 +22,7 @@ header {
     display: grid;
     justify-content: center;
     align-items: center;
-    grid-template-columns: 10rem 41rem 28rem;
+    grid-template-columns: 10fr 41fr 28fr;
     position: sticky;
     top: 0;
     background-color: var(--bg-header);
@@ -45,24 +45,20 @@ nav {
 }
 
 .sidebar-left {
-    position: sticky;
-    background-color: var(--bg-surface);
+    position: relative;
     grid-area: sidebar-left;
     height: 17rem;
     width: 10rem;
-    top: 5rem;
     left: 0;
     padding-top: 1.3rem;
     box-sizing: border-box;
 }
 
 .sidebar-right {
-    position: sticky;
-    background-color: var(--bg-surface);
+    position: relative;
     grid-area: sidebar-right;
     width: 28rem;
     height: 35rem;
-    top: 5rem;
     right: 0;
     padding-top: 1.3rem;
     box-sizing: border-box;
@@ -70,9 +66,8 @@ nav {
 
 main {
     justify-content: center;
-    width: 41rem;
+    width: 100%;
     grid-area: main;
-    height: 200vh;
     background-color: var(--bg-surface);
     margin-top: 1.2rem;
 }
@@ -81,6 +76,7 @@ main {
     display: flex;
     flex-direction: column;
     margin-top: 1.1rem;
+    overflow: scroll;
 }
 
 #logo-icon {
@@ -91,7 +87,7 @@ main {
     margin-left: 1.6rem;
 }
 
-@media screen and (max-width: 480px) and (orientation: portrait) {
+@media screen and (max-width: 950px) and (orientation: portrait) {
 
     header {
         width: 100%;
@@ -116,6 +112,7 @@ main {
 
     .feed {
         width: 100%;
+        min-width: auto;
     }
 
     .sidebar-left {

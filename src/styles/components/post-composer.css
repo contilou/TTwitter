@@ -50,7 +50,7 @@
     border-radius: 0.75rem;
 }
 
-@media screen and (max-width: 480px) and (orientation: portrait) {
+@media screen and (max-width: 950px) and (orientation: portrait) {
     .post-composer {
         min-height: 6.25rem;
         height: 100%;

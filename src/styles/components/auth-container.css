@@ -108,7 +108,7 @@
     background-color: var(--bg-login);
 }
 
-@media screen and (max-width: 480px) and (orientation: portrait) {
+@media screen and (max-width: 950px) and (orientation: portrait) {
     .auth-container {
         width: 82%;
         margin: auto 0 auto 0;
